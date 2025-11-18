@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library – Evan Stonerock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* collapsible book notes */
+    details {
+      margin-top: 12px;
+      background: #222;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #f5f5f5;
+    }
+    summary:hover {
+      opacity: 0.8;
+    }
+    details p {
+      margin-top: 10px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="fade-in">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="articles.html">Articles</a>
+    <a href="library.html" class="active">Library</a>
+  </nav>
+
+  <h1 class="fade-in">Library</h1>
+
+  <div class="card fade-in">
+    <p style="text-align:center;">
+      A record of every book I’ve read and the notes I took along the way.
+      I’ll keep updating this as I go.
+    </p>
+  </div>
+
+  <!-- BOOK ENTRY TEMPLATE -->
+  <!-- Copy this block for every new book you add -->
+  <div class="card fade-in">
+    <h3>Book Title – Author</h3>
+    <p><em>Finished: Month Year</em></p>
+
+    <details>
+      <summary>My Notes</summary>
+      <p>
+        Write your notes here. These can be bullet points, quotes, reflections,
+        or anything from your reading journal.
+      </p>
+    </details>
+  </div>
+
+  <!-- Add more book blocks below this line -->
+
+  <footer class="fade-in">
+    © 2025 Evan Stonerock
+  </footer>
+
+</body>
+</html>
